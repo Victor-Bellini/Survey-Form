@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  
+  <body>
+  
+  <div class="view">
+    
+    <div class="header">
+      <hr class="header-hr">
+      <h1 id="title">Formulário de Satisfação</h1>
+      <p id="description">Ajude-nos a melhorar cada dia mais.</p>
+      <hr class="header-hr">
+    </div>
+
+    <form id="survey-form">
+      <fieldset>
+        
+      <div class="personal-info">
+        <label id="name-label" for="name">Nome<input id="name" type="text" placeholder="Insira seu nome" required /></label>
+        <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Insira seu email" required /></label>
+        <label id="number-label" for="number">Idade<input id="number" type="number" min="14" max="120" placeholder="Insira sua idade" required /></label>
+        
+        <label id="region-label" for="region">Região
+        <select id="dropdown" required>
+          <option value="">(Escolha uma)</option>
+          <option value="1">Centro-Oeste</option>
+          <option value="2">Nordeste</option>
+          <option value="3">Norte</option>
+          <option value="4">Sudeste</option>
+          <option value="5">Sul</option>
+        </select>
+        </label>
+      </div>
+
+      <h2>Como você se identifica?</h2>
+      
+      <div class="gender">
+        <label for="masculine-label"><input id="masculine-label" type="radio" name="gender" class="inline" value="1" /> Masculino</label>
+        <label for="feminine-label"><input id="feminine-label" type="radio" name="gender" class="inline" value="2" /> Feminino</label>
+        <label for="non-binary-label"><input id="non-binary-label" type="radio" name="gender" class="inline" value="3" /> Não-binário</label>
+        <label for="hidden-label"><input id="hidden-label" type="radio" checked="checked" name="gender" class="inline" value="4" /> Prefiro não dizer</label>
+      </div>
+
+      <hr class="form-hr">
+
+      <div class="scholarity">     
+      <label id="grade-label" for="grade">Qual seu nível de escolaridade?
+        <select id="dropdown" required>
+          <option value="">(Escolha uma)</option>
+          <option value="1">Ensino Fundamental Incompleto</option>
+          <option value="2">Ensino Fundamental Completo</option>
+          <option value="3">Ensino Médio Incompleto</option>
+          <option value="4">Ensino Médio Completo</option>
+          <option value="5">Ensino Superior Incompleto</option>
+          <option value="6">Ensino Superior Completo</option>
+        </select>
+      </label>
+          <h2>Quais eram as suas matérias favoritas?</h2>
+          
+      <div class="supplies">
+        <label for="portuguese">
+          <input id="portuguese" type="checkbox" required name="supplies" class="inline" value="1" /> Português</a>
+       </label>
+        <label for="math">
+          <input id="math" type="checkbox" name="supplies" class="inline" value="2" /> Matemática</a>
+       </label>
+        <label for="history">
+          <input id="history" type="checkbox" name="supplies" class="inline" value="3" /> História</a>
+       </label>
+        <label for="geo">
+          <input id="geo" type="checkbox" name="supplies" class="inline" value="4" /> Geografia</a>
+       </label>
+        <label for="science">
+          <input id="science" type="checkbox" name="supplies" class="inline" value="5" /> Ciências</a>
+       </label>
+       <label for="tips">Legal! Como poderiamos melhorar as outras?<textarea id="bio" name="bio" rows="3" cols="30" placeholder="Escreva o que passar pela sua mente!"></textarea></label>
+       </div>
+
+      </fieldset>
+
+      <input id="submit" class="submit-button" type="submit" value="Enviar" />
+
+    </form>
+
+  </div>
+
+</body>
